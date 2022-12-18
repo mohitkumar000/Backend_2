@@ -13,6 +13,12 @@ app.get('/',function(req,res)
   //res.send("<h1>cool it is running</h1>");
   return res.render('index_home');
 });
+app.get('/',function(req,res)
+{
+  //console.log(__dirname);
+  //res.send("<h1>cool it is running</h1>");
+  return res.render('index_home');
+});
 
 
 app.listen(port,function(err) {
