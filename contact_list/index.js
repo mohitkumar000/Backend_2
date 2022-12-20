@@ -11,13 +11,17 @@ app.get('/',function(req,res)
 {
   //console.log(__dirname);
   //res.send("<h1>cool it is running</h1>");
-  return res.render('index_home');
+  return res.render('index_home',{title:"My contact"});
 });
-app.get('/',function(req,res)
-{
-  //console.log(__dirname);
-  //res.send("<h1>cool it is running</h1>");
-  return res.render('index_home');
+ app.get('/',function(req,res)
+ {
+    console.log(__dirname);
+      res.send("<h1>cool it is running</h1>");
+    return res.render('index_home');
+ });
+app.get('/practise',function(req,res){
+  return res.render('practise',
+  {title:"Prcatise page"})
 });
 
 
