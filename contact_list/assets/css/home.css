@@ -88,6 +88,7 @@ body
     
     display: inline;
     padding-right: 4rem;
+  
 }
 
 #phone_{
@@ -96,6 +97,8 @@ body
     
     font-size: 25px;
     display: inline;
+   
+    
 }
 .list_inner
 {
@@ -104,4 +107,6 @@ body
     border: 1px solid black;
     width: 30%;
     margin-left: 37%;
+    
+    
 }
