@@ -7,16 +7,18 @@ app.set('view engine', 'ejs');//setting the value of 'view engine'
 app.set('views',path.join(__dirname,'views'));
 app.use(express.urlencoded());
 
-//middleware 1
-app.use(function(req,res,next){
-  console.log('middleware 1 called');
-  next();
-})
-//middleware 2
-app.use(function(req,res,next){
-  console.log('middleware 2 called');
-  next();
-})
+// //middleware 1
+// app.use(function(req,res,next){
+//   console.log('middleware 1 called');
+//   next();
+// })
+// //middleware 2
+// app.use(function(req,res,next){
+//   console.log('middleware 2 called');
+//   next();
+// })
+
+app.use(express.static('assets'));
 
 
 
