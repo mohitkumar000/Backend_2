@@ -43,10 +43,18 @@ app.get('/',function(req,res)
 {
   //console.log(__dirname);
   //res.send("<h1>cool it is running</h1>");
-  return res.render('index_home',{
-    title:"My contact",
-    Contact_list:contactList
-});
+  Contact.find({},function(err,contactList){
+    if(err)
+    {
+      console.log('error in fetching contact ');
+      return;
+    }
+    return res.render('index_home',{
+      title:"My contact",
+      Contact_list:contactList
+  });
+  });
+
  
 });
 
