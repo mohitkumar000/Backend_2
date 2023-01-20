@@ -11,5 +11,6 @@ function fun(x,fn)
 fun(10,function log()
 {
     //this is the callback function
+    
     console.log("custom logger");
 });
