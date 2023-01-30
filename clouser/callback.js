@@ -14,3 +14,9 @@ fun(10,function log()
     
     console.log("custom logger");
 });
+fun(10,function log()
+{
+    //this is the callback function
+    
+    console.log("custom logger");
+});
