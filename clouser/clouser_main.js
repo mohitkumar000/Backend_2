@@ -15,3 +15,6 @@ console.log("ending");
 
 //then how did the fun is accessing the task vairable
 
+//this happen due to clousers
+
+//when any function remember its lexical scope even when the funtion is executed outside the scope
