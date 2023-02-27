@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 const PORT = 3000;
-
+app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json());
 
 //mimic the db using array
@@ -20,8 +20,14 @@ app.get('/blogs',(req,res) => {
 });
 
 app.post('/blogs',(req,res)=>{
-    console.log(req.body)
-})
+    blogList.push({title:req.body.title,content:req.body.content});
+    return res.status(201).json({
+        success:true,
+    });
+   
+
+
+});
 
 app.listen(PORT, ()=>{
     console.log('server started at port',PORT);
